@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>SAAM</title>
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile.theme-1.3.1.min.css">
+  <link rel="stylesheet" href="https://codiqa.com/view/93b89a9a/themecss">
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <link rel="stylesheet" href="https://codiqa.com/view/93b89a9a/css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+  <script src="https://codiqa.com/view/93b89a9a/js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="page1" class="Consultas">	 
+      <div data-role="panel" id="panel2" data-position="left" data-display="reveal" data-theme="a">
+		  <div id="miListas"></div> 
+      </div>
+      <div data-theme="a" data-role="header">
+          <h3>
+              SAAM -  TICGROWING
+          </h3>
+          <a data-role="button" href="#panel2" data-icon="bars" data-iconpos="left">
+              ZONA
+          </a>
+      </div>
+      <div data-role="content">
+          <div class="split-wrapper">
+                  <h2 id="lblZonaSeleccionada" >
+                      <span id="lblZonas">Zona:</span>
+                  </h2>
+				  <div id="miListasInmTotal"></div>
+
+          </div>
+      </div>
+      <div data-theme="a" data-role="footer" data-position="fixed">
+          <h3>
+              Emerson Aguilar - TICGrowing.com
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Detalle" id="page3">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="#page4" class="ui-btn-right">
+              Acerca
+          </a>
+          <a data-role="button" data-direction="reverse" data-transition="flow"
+          href="#page1" class="ui-btn-left">
+              Regresar
+          </a>
+          <h3>
+              Detalle
+          </h3>
+      </div>
+      <div data-role="content">
+          <div class="split-wrapper">
+              <div class="content-secondary">
+				  <div id="dvDatosPro" ></div>
+                 
+				<div data-role="footer" data-theme="a" class="ui-bar ui-grid-c">
+					<div class="ui-block-a"><label for="value" style="margin:8px 10px 0 0; text-align:right;">Total:</label></div>
+					<div class="ui-block-b"><input id="value" value="5,000"></div>	 
+					<div class="ui-block-c" >
+						<div style="margin:6px 0 0 0px;"> <a id="btnPagar" data-role="button" data-theme="b" href="#page1" >
+                      Pagar
+                  </a></div>
+					</div>
+				</div>
+              </div>
+              <div class="content-primary">
+					<div id="dvDetalleInmueble"></div>
+
+			  </div>
+          </div>
+      </div>
+      <div data-theme="a" data-role="footer" data-position="fixed">
+          <h3>
+              Emerson Aguilar - TICGrowing.com
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="About" id="page4">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" data-direction="reverse" data-transition="flow"
+          href="#page1" class="ui-btn-left">
+              Regresar
+          </a>
+          <h3>
+              Acerca de
+          </h3>
+      </div>
+      <div data-role="content">
+			 
+
+			<div class="content-full twelve columns">
+				<div id="content">
+					
+					<div id="banner-secondary" class="large-banner entry-header">
+						<h1 class="entry-title">SAAM</h1>
+					</div>					
+					
+			<div id="banner-secondary" class="large-banner">
+			</div>
+
+			<div class="sub-banner">
+				<p>Sistema de Administracion de Alcaldia Municipal</p>
+			</div>
+			
+			<div class="row">
+				<div class="five columns">
+					<h2>TICGROWING</h2>
+					<p>Emerson Aguilar</p> 
+				</div>				 
+			</div>
+
+      </div>
+      <div data-theme="a" data-role="footer" data-position="fixed">
+          <h3>
+              Emerson Aguilar - TICGrowing.com
+          </h3>
+      </div>
+
+  </div>
+    <script>
+			var pro_id = '';
+			var pro_propietario = '';
+			var pro_nit = '';
+			var car_inm_id = '';
+			var zon_area = '';
+			var zon_id= '';
+			var zon_zona = '';
+			var inm_direccion = '';
+			var mese_mora = '';
+			var alumbrado = '';
+			var aseo = '';
+			var pavimento = '';
+			var cargo = '';
+			var fondo_fiesta = '';
+			var saldo = '';
+			var abono = '';
+			var intereses = '';
+			var intereses_cobrados = '';
+			var vTotal='';
+			var vTotalPagar=0.00;
+		
+			$(document).ready(function(){	
+				$("#miListasInmTotal").html('');
+				fnLlenarZonas();			
+				 
+			});
+			 
+			function fnLlenarZonas(){
+			
+				$.ajax({
+					type: "GET",
+					url: "zonas.xml",
+					dataType: "xml",
+					success: function(xml) {
+						$("#miListas").empty();
+						$("#miListas").append('<div id="dvListaU" data-role="collapsible" data-theme="b" data-content-theme="c"><h3>Urbanas</h3></div>');
+						$("#miListas").append('<div id="dvListaR" data-role="collapsible" data-theme="b" data-content-theme="c"><h3>Rural</h3></div>');
+						$("#dvListaU").append('<ul data-role="listview" id="ulZonasU" data-divider-theme="b"></ul>');
+						$("#dvListaR").append('<ul data-role="listview" id="ulZonasR" data-divider-theme="b"></ul>');
+
+						$(xml).find('Table').each(function(){
+							var id = $(this).find('id').text();
+							var title = $(this).find('zona').text();
+							var area = $(this).find('area').text(); 
+							var lista = '<li data-theme="a" ><a class="clsZonas" href="#" id="ulZona_' + id +'" data-transition="slide">'+title+'</a></li>';
+							if (area=='R')
+							{
+								$('#ulZonasR').append(lista); 
+							}
+							else {
+								$('#ulZonasU').append(lista); 
+							}
+						});
+												
+						$("#page1").trigger('pagecreate');
+						
+						
+					}
+				});
+			}
+			
+			function fnLlenarTotalesInmuebles1(zona_id){
+				$.ajax({
+					type: "GET",
+					url: "inmuebles_total.xml",
+					dataType: "xml",
+					success: function(xml) {
+						$("#miListasInmTotal").empty();
+ 	                    var vrTabla = '';
+	                    vrTabla += '<div><table cellpadding="0" cellspacing="0" border="0" class="display" id="grInmuebles"> ';
+	                    vrTabla += '    <thead> ';
+	                    vrTabla += '        <tr>';
+	                    vrTabla += '            <th>ID</th> ';
+	                    vrTabla += '            <th>Propietario</th> '; 
+	                    vrTabla += '            <th>Direccion</th> ';
+	                    vrTabla += '            <th>Saldo</th> ';
+	                    vrTabla += '            <th>Intereses</th> ';
+	                    vrTabla += '            <th>Total</th> ';
+						vrTabla += '            <th></th> ';
+	                    vrTabla += '        </tr> ';
+	                    vrTabla += '     </thead> ';
+	                    vrTabla += '     <tbody> '; 
+						var vrBody = '';
+						$(xml).find('Table').each(function(){						
+							 pro_id = $(this).find('pro_id').text();
+							 pro_propietario = $(this).find('pro_propietario').text();
+ 							 car_inm_id = $(this).find('car_inm_id').text();
+							 zon_area = $(this).find('zon_area').text();
+							 zon_id = $(this).find('inm_zon_id').text();
+							 zon_zona = $(this).find('zon_zona').text(); 
+							 inm_direccion = $(this).find('inm_direccion').text();
+ 							 saldo = $(this).find('saldo').text(); 
+ 							 intereses = $(this).find('intereses').text(); 
+							 intereses_cobrados = $(this).find('intereses_cobrados').text(); 
+							 if (zon_id == zona_id){
+								vrBody += '<tr> ';
+								vrBody += '<td id="p' + car_inm_id + '">' + car_inm_id + '</td>';
+								vrBody += '<td >' + pro_propietario + '</td>'; 
+								vrBody += '<td >' + inm_direccion + '</td>';
+								vrBody += '<td id="c' + car_inm_id + '">' + redondear(saldo,2) + '</td>';
+								vrBody += '<td id="a' + car_inm_id + '">' + redondear(intereses,2) + '</td>';
+								vTotal = parseFloat(saldo) + parseFloat(intereses);
+								vrBody += '<td id="s' + car_inm_id + '">' + redondear(vTotal,2) + '</td>';
+								vrBody += '<td><a id="btnPro_' + car_inm_id + '" data-role="button" href="#page3" data-icon="edit" class="fnSelectPropietario" data-iconpos="left"> Seleccionar <a></td>';
+								vrBody += '</tr>';
+							}							
+						});
+						vrTabla += vrBody;
+	                    vrTabla += '</tbody>';
+	                    vrTabla += '</table></div>';
+						if (vrBody!=''){
+						$("#miListasInmTotal").html(vrTabla);
+						}
+						$("#page1").trigger('pagecreate');						
+						
+					}
+				});
+			}
+			
+			function fnLlenarTotalesInmuebles(zona_id){
+				$.ajax({
+					type: "GET",
+					url: "inmuebles_total.xml",
+					dataType: "xml",
+					success: function(xml) {
+						$("#miListasInmTotal").empty();
+ 	                    var vrTabla = '<ul data-role="listview" data-filter="true" >';
+						var vrBody = '';
+						$(xml).find('Table').each(function(){						
+							 pro_id = $(this).find('pro_id').text();
+							 pro_propietario = $(this).find('pro_propietario').text();
+ 							 car_inm_id = $(this).find('car_inm_id').text();
+							 zon_area = $(this).find('zon_area').text();
+							 zon_id = $(this).find('inm_zon_id').text();
+							 zon_zona = $(this).find('zon_zona').text(); 
+							 inm_direccion = $(this).find('inm_direccion').text();
+ 							 saldo = $(this).find('saldo').text(); 
+ 							 intereses = $(this).find('intereses').text(); 
+							 intereses_cobrados = $(this).find('intereses_cobrados').text(); 
+							 if (zon_id == zona_id){
+								vrBody += '<li>';
+								//vrBody += '<h3> ID:' + car_inm_id + '</h3>';
+								vrBody += '<h2>Propietario: ' + pro_propietario + '</h2>'; 
+								vrBody += '<p><strong>Direccion: ' + inm_direccion + '</strong></p>';
+								vrBody += '<p><strong>Saldo: $ ' + redondear(saldo,2) + '</strong></p>';
+								vrBody += '<p><strong>Intereses: $  ' + redondear(intereses,2) + '</strong></p>';
+								vTotal = parseFloat(saldo) + parseFloat(intereses);
+								vrBody += '<p class="ui-li-aside"><strong>Total: $ ' + redondear(vTotal,2) + '</strong></p>';								
+								vrBody += '<p><strong><a id="btnPro_' + car_inm_id + '" data-role="button" href="#page3" data-icon="edit" class="fnSelectPropietario" data-iconpos="left"> Seleccionar </a></strong></p>';
+								vrBody += '</li>';
+							}							
+						});						
+						vrTabla += vrBody;
+						vrTabla += '</ul>';
+						if (vrBody!=''){
+						$("#miListasInmTotal").html(vrTabla);
+						}
+						$("#page1").trigger('pagecreate');						
+						
+					}
+				});
+			}
+		
+		function fnLlenarDetalleInmuebles(inmueble_id){
+			var titulo = '';
+			$.ajax({
+				type: "GET",
+				url: "detalle.xml",
+				dataType: "xml",
+				success: function(xml) {
+					$("#dvDetalleInmueble").empty();				
+					var vrTabla = '<ul data-role="listview" >';
+					var vrBody = '';		
+					var vrDatosPro = '';
+					$(xml).find('Table').each(function(){						
+						 pro_id = $(this).find('pro_id').text();
+						 pro_propietario = $(this).find('pro_propietario').text();
+						 pro_nit = $(this).find('pro_nit').text();
+						 car_inm_id = $(this).find('car_inm_id').text();
+						 zon_area = $(this).find('zon_area').text(); 
+						 zon_zona = $(this).find('zon_zona').text(); 
+						 inm_direccion = $(this).find('inm_direccion').text();
+						 Mes_Name = $(this).find('Mes_Name').text(); 
+						 car_year = $(this).find('car_year').text(); 
+						 car_alumbrado = $(this).find('car_alumbrado').text(); 
+						 car_aseo = $(this).find('car_aseo').text(); 
+						 car_pavimento = $(this).find('car_pavimento').text(); 
+						 car_cargo = $(this).find('car_cargo').text(); 						 
+						 car_abono = $(this).find('car_abono').text(); 
+						 car_saldo = $(this).find('car_saldo').text(); 
+						 saldo = $(this).find('car_saldo').text(); 
+						 fiesta = parseFloat(saldo) - parseFloat(car_cargo);
+						 Intereses = $(this).find('Intereses').text(); 						 
+						 if (car_inm_id == inmueble_id){
+							if (titulo==''){
+								 vrDatosPro = '<ul data-role="listview" data-divider-theme="b" data-inset="true">';
+								 vrDatosPro += '	  <li data-theme="c">';
+								 vrDatosPro += '		  <a href="#" >';
+								 vrDatosPro += pro_nit;
+								 vrDatosPro += '		  </a>';
+								 vrDatosPro += '	  </li>';
+								 vrDatosPro += '      <li data-theme="c">';
+								 vrDatosPro += '		  <a href="#">';
+								 vrDatosPro += pro_propietario;
+								 vrDatosPro += '		  </a>';
+								 vrDatosPro += '	  </li>';
+								 vrDatosPro += '	  <li data-theme="c">';
+								 vrDatosPro += '		  <a href="#" >';
+								 vrDatosPro += inm_direccion;
+								 vrDatosPro += '		  </a>';
+								 vrDatosPro += '	  </li>';
+								 vrDatosPro += '	  <li data-theme="c">';
+								 vrDatosPro += '		  <a href="#" >';
+								 vrDatosPro += zon_zona;
+								 vrDatosPro += '		  </a>';
+								 vrDatosPro += '	  </li>';
+								 vrDatosPro += '  </ul> ';
+								 $("#dvDatosPro").html(vrDatosPro);
+							}
+							vrBody += '<li>';
+							//vrBody += '<h3> ID:' + car_inm_id + '</h3>';
+							vrBody += '<h2>A&ntilde;o: ' + car_year + ' Mes: ' + Mes_Name + '</h2>'; 
+							vrBody += '<p><strong>Alumbrado: $ ' + car_alumbrado + '</strong></p>';
+							vrBody += '<p><strong>Aseo: $ ' + redondear(saldo,2) + '</strong></p>';
+							vrBody += '<p><strong>Pavimento: $  ' + redondear(car_pavimento,2) + '</strong></p>';
+							vrBody += '<p><strong>Cargo: $  ' + redondear(car_cargo,2) + '</strong></p>';
+							vrBody += '<p><strong>Fondo Fiesta: $  ' + redondear(fiesta,2) + '</strong></p>';
+							vrBody += '<p><strong>Intereses: $  ' + redondear(intereses,2) + '</strong></p>';
+							vTotal = parseFloat(saldo) + parseFloat(intereses);
+							vrBody += '<p class="ui-li-aside">';
+							vrBody += '<label class="" value="' + redondear(vTotal,2) + '"><input type="checkbox" name="checkbox-0" class="clCheckbox" value="' + redondear(vTotal,2) + '"/> Pagar: $' + redondear(vTotal,2) + '</label></strong></p>';
+							vrBody += '</li>';
+						}
+					});
+					vrTabla += vrBody;
+					vrTabla += '</ul>';
+					if (vrBody!=''){
+						$("#dvDetalleInmueble").html(vrTabla);
+						$('input[type=checkbox]').change(function () { 
+							fnSumar();
+						});
+					}
+					$("#page3").trigger('pagecreate');
+				}
+			});
+		}
+
+		$(document).on("click", ".clsZonas", function(e){
+			var vId = $(this).attr("id"); 
+			var vNombre = $(this).text();
+			
+			$("#lblZonas").text('Zona: ' + vNombre);
+			fnLlenarTotalesInmuebles(vId.replace("ulZona_", ""));
+		});
+ 
+		$(document).on("click", ".fnSelectPropietario", function(e){
+			var vIdInm = $(this).attr("id");
+			vTotalPagar = 0.00;
+			$("#value").attr("value", vTotalPagar);
+			fnLlenarDetalleInmuebles(vIdInm.replace("btnPro_", ""));
+		});
+		
+		
+		//$(document).on("click", ".clCheckbox", function(e){
+		//	fnSumar()
+		//});
+		
+		function fnSumar(){
+			var valor = 0.00;
+			var total = 0.00;
+		     $(':checkbox:checked[name*=checkbox-0]').each(function (i) {
+                    valor = $(this).attr('value');
+					total = parseFloat(total) + parseFloat(valor);
+            });
+			$("#value").attr("value", redondear(total,2));
+		}
+		
+		function redondear(num, dec) {
+			var result = Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
+			return result;
+		} 
+		
+	</script>
+</body>
+</html>
