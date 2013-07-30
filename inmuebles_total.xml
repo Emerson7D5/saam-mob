@@ -1,0 +1,253 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <pro_id>1</pro_id>
+    <pro_propietario>Aguilar Castaneda Samuel</pro_propietario>
+    <car_inm_id>1</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>6a, calle ote, Barrio San Jose</inm_direccion>
+    <saldo>13.73</saldo>
+    <intereses>0.26</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>2</pro_id>
+    <pro_propietario>Acosta Castillo, Juan Miguel</pro_propietario>
+    <car_inm_id>2</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>4A. AVE, SUR, Barrio San antonio</inm_direccion>
+    <saldo>59.32</saldo>
+    <intereses>1.75</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>3</pro_id>
+    <pro_propietario>Aguilar Ortega, Porfidio</pro_propietario>
+    <car_inm_id>3</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>1a Av. Sur, Bo. Sto. Domingo</inm_direccion>
+    <saldo>150.28</saldo>
+    <intereses>35.50</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>4</pro_id>
+    <pro_propietario>Aguilar Menéndez, Maria Lindaura</pro_propietario>
+    <car_inm_id>4</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>Carretera Panam. Bo. San Antonio</inm_direccion>
+    <saldo>522.90</saldo>
+    <intereses>164.25</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>5</pro_id>
+    <pro_propietario>Aguilar Menéndez, Maria Lindaura</pro_propietario>
+    <car_inm_id>5</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>2a. Av. Sur y 1a C. Pte. Bo. San Antonio</inm_direccion>
+    <saldo>2212.64</saldo>
+    <intereses>610.58</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>6</pro_id>
+    <pro_propietario>Aguilar de Rivera, Armida</pro_propietario>
+    <car_inm_id>6</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>2a Av. Sur y 1a C. Pte, Bo. S. Antonio</inm_direccion>
+    <saldo>209.57</saldo>
+    <intereses>7.72</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>7</pro_id>
+    <pro_propietario>Aguirre, Francisco Salvador</pro_propietario>
+    <car_inm_id>7</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>2a av. Sur, Bo. San Antonio</inm_direccion>
+    <saldo>108.05</saldo>
+    <intereses>3.99</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>8</pro_id>
+    <pro_propietario>Avila de Linares, Glenda Marisela</pro_propietario>
+    <car_inm_id>8</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>5a C. Ote. Bo. Santo Domingo</inm_direccion>
+    <saldo>426.89</saldo>
+    <intereses>68.89</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>9</pro_id>
+    <pro_propietario>Aguirre Henríquez, José Ángel</pro_propietario>
+    <car_inm_id>9</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>Pje. Masaya Bo. Santo Domingo</inm_direccion>
+    <saldo>14.01</saldo>
+    <intereses>0.13</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>10</pro_id>
+    <pro_propietario>Alarcón Macal, Roxana Minet</pro_propietario>
+    <car_inm_id>10</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>1a Av. Sur, Bo. Sto. Domingo</inm_direccion>
+    <saldo>20.96</saldo>
+    <intereses>0.20</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>11</pro_id>
+    <pro_propietario>Alarcón  Macal, Roxana Minet</pro_propietario>
+    <car_inm_id>11</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>Carretera Panam. Bo. San Antonio</inm_direccion>
+    <saldo>17.14</saldo>
+    <intereses>0.16</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>12</pro_id>
+    <pro_propietario>Alarcón macal, Julio Cesar</pro_propietario>
+    <car_inm_id>12</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>Carretera Panam. Bo. San Antonio</inm_direccion>
+    <saldo>60.48</saldo>
+    <intereses>0.57</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>13</pro_id>
+    <pro_propietario>Alarcón Palma, Álvaro Armando</pro_propietario>
+    <car_inm_id>13</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>1a C. Pte. Y 2a Av. Sur, Bo. Sn. Antonio</inm_direccion>
+    <saldo>470.47</saldo>
+    <intereses>63.49</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>14</pro_id>
+    <pro_propietario>Alegría, Miguel Ángel</pro_propietario>
+    <car_inm_id>14</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion> Pje. Masaya y 9a. C. Ote. B. Sto. Dom.</inm_direccion>
+    <saldo>88.11</saldo>
+    <intereses>2.82</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>15</pro_id>
+    <pro_propietario>Alegría Martinez, Rene</pro_propietario>
+    <car_inm_id>15</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>3a. Calle ote y 3a, ave, sur, Barrio Sto. Domingo</inm_direccion>
+    <saldo>48.64</saldo>
+    <intereses>1.79</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>16</pro_id>
+    <pro_propietario>Alfaro, Concepción del Transito</pro_propietario>
+    <car_inm_id>16</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>AV. J. D. P. Sur y 7a C. Ote. B. S. Dom.</inm_direccion>
+    <saldo>472.06</saldo>
+    <intereses>100.83</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>17</pro_id>
+    <pro_propietario>Alfaro, Emilio de Jesús</pro_propietario>
+    <car_inm_id>17</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>7a C. Ote. Bo. Sto. Domingo</inm_direccion>
+    <saldo>39.69</saldo>
+    <intereses>1.47</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>18</pro_id>
+    <pro_propietario>Alfaro, Gerardo Antonio</pro_propietario>
+    <car_inm_id>18</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>7a C. Ote. Bo. Sto. Domingo</inm_direccion>
+    <saldo>345.04</saldo>
+    <intereses>22.60</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>19</pro_id>
+    <pro_propietario>Alfaro, Victoria Esperanza</pro_propietario>
+    <car_inm_id>19</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>2a Av. Sur Bo. San Antonio</inm_direccion>
+    <saldo>180.29</saldo>
+    <intereses>13.52</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>20</pro_id>
+    <pro_propietario>Alfaro de Axume, Rosa Angelica</pro_propietario>
+    <car_inm_id>20</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>7a C. Otee. Y 1a Av. Sur Bo. Sto. DOM.</inm_direccion>
+    <saldo>350.29</saldo>
+    <intereses>17.96</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>21</pro_id>
+    <pro_propietario>Alfaro de Axume, Rosa Angelica</pro_propietario>
+    <car_inm_id>21</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>Final Av. J. D. P. Sur, Bo. Sto. Domingo</inm_direccion>
+    <saldo>112.27</saldo>
+    <intereses>5.76</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>22</pro_id>
+    <pro_propietario>Alfaro Vda. De Sandoval, Sara</pro_propietario>
+    <car_inm_id>22</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>1a Av. Sur, Bo. Sto. Domingo</inm_direccion>
+    <saldo>619.37</saldo>
+    <intereses>178.50</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>23</pro_id>
+    <pro_propietario>Alfaro Vda. De Sandoval, Sara</pro_propietario>
+    <car_inm_id>23</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>2a. Ave. Sur,Barrio San Antonio</inm_direccion>
+    <saldo>81.68</saldo>
+    <intereses>2.81</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>24</pro_id>
+    <pro_propietario>Alfaro Vda. De Sandoval, Sara</pro_propietario>
+    <car_inm_id>24</car_inm_id>
+    <inm_zon_id>15</inm_zon_id>
+    <inm_direccion>3a C. Pte. Bo. San Antonio</inm_direccion>
+    <saldo>108.27</saldo>
+    <intereses>3.74</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+  <Table>
+    <pro_id>29</pro_id>
+    <pro_propietario>aguilar</pro_propietario>
+    <car_inm_id>30</car_inm_id>
+    <inm_zon_id>7</inm_zon_id>
+    <inm_direccion>asf</inm_direccion>
+    <saldo>42.84</saldo>
+    <intereses>0.34</intereses>
+    <intereses_cobrados>0.00</intereses_cobrados>
+  </Table>
+</NewDataSet>

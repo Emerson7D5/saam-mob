@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <id>1</id>
+    <zona>A</zona>
+    <area>R</area>
+  </Table>
+  <Table>
+    <id>6</id>
+    <zona>F</zona>
+    <area>U</area>
+  </Table>
+  <Table>
+    <id>7</id>
+    <zona>G</zona>
+    <area>U</area>
+  </Table>
+  <Table>
+    <id>15</id>
+    <zona>BARRIO SAN JOSE</zona>
+    <area>U</area>
+  </Table>
+  <Table>
+    <id>16</id>
+    <zona>CCCC</zona>
+    <area>U</area>
+  </Table>
+</NewDataSet>
